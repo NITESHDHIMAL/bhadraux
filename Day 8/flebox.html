@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* id, class, element, attribute */
+
+        *{
+            margin: 0;
+        }
+        .navbar {
+            border: 4px solid red;
+            display: flex;
+            /* background-color: brown; */
+            height: 300px;
+
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+
+            /* align-items: center ;
+            align-items: end;
+            align-items: start; */
+
+            flex-wrap: wrap;
+
+
+            /* align-content: center; */
+            /* align-content: space-between; */
+            align-content: space-around;
+
+
+        }
+        .child{
+            height: 120px;
+            width: 120px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- <h2>Parent Propertibes</h2>
+    <ol>
+        <li>display:flex</li>
+        <li>flex-wrap</li>
+        <li>gap</li>
+        <li>justify(row) content</li>
+        <li>align(column) items</li>
+        <li>align-content</li>
+        <li>flex-direction</li>
+    </ol>
+
+    <h2>Children Properties</h2>
+
+    <ol>
+        <li>order</li>
+        <li>flex-flow</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>align-self</li>
+    </ol> -->
+
+
+    <div class="navbar">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
