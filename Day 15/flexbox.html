@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .parent{
+            border: 4px solid red;
+            display: flex;
+            height: 400px;
+
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; */
+            
+            justify-content: center;
+
+            /* align-content: center; */
+            /* align-content: end; */
+            align-content: start;
+
+            /* gap: 10px; */
+            /* row-gap: 10px; */
+            column-gap: 10px;
+
+
+
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            font-size: 3rem;
+            align-content: center;
+            text-align: center;
+        }
+        #chidl1{
+            order: 6;
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+            /* align-self: center; */
+            /* align-self: end; */
+            align-self: start;
+        }
+        #child2{
+            order: 2;
+        }
+        #child3{
+            order: 3;
+        }
+        #child4{
+            order: 4;
+        }
+        #child5{
+            order: 5;
+            /* flex-grow: 2; */
+        }
+        #child6{
+            order: 1;
+        } 
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="child" id="chidl1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+        <div class="child" id="child6">6</div>
+    </div>
+    
+
+</body>
+</html>

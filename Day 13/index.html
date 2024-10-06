@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .slider {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .swiper_slide {
+            display: flex;
+            background-color: black;
+            width: 300px;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            border-radius: 2rem;
+            padding-top: 1rem;
+            /* transition: all 1s; */
+            /* transition-property:background-color; */
+            transition-property: all;
+            transition-duration: 1s;
+            /* transition-delay: 2s; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function: cubic-bezier(0.88, -0.46, 0, 1.27);
+      
+            background-image: url("https://demo.bravisthemes.com/kimono/wp-content/uploads/2024/05/service003-848x439.webp");
+        }
+
+        .swiper_slide img {
+            width: 90px;
+        }
+
+        .swiper_slide:hover {
+            background-color: brown;
+            cursor: pointer;
+            /* cursor: help; */
+            font-size: 2rem;
+        }
+        a{
+            color: gray;
+            text-decoration: none;
+            /* border: 1px solid black; */
+            padding: 0.3rem;
+            border-radius: 100%;
+            font-size: 0.2rem;
+
+        }
+
+        a:hover{
+            color: black;
+            /* background-color: black; */
+            border: 1px solid black;
+             
+        }
+
+        a i{
+            padding: 0.4rem;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="slider">
+        <div class="swiper_slide" id="">
+            <!-- <img src="./camera.png" alt=""> -->
+            <span>03</span>
+            <p>Photography Archive</p>
+        </div>
+        <div class="swiper_slide">
+            <img src="./camera.png" alt="">
+            <span>03</span>
+            <p>Photography Archive</p>
+        </div>
+        <div class="swiper_slide">
+            <img src="./camera.png" alt="">
+            <span>03</span>
+            <p>Photography Archive</p>
+        </div>
+        <div class="swiper_slide">
+            <img src="./camera.png" alt="">
+            <span>03</span>
+            <p>Photography Archive</p>
+        </div>
+    </div>
+
+
+    <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+    <a href="">1</a>
+
+</body>
+
+</html>
